@@ -94,9 +94,20 @@ main h1{
     color: #fff;
 }
 
-@media(max-width: 435px){
+@media(max-width: 1277px){
+    .projects{
+        justify-content: center;
+    }
+
     .projeto{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 20px;
+    }
+
+}
+
+@media(max-width: 772px){
+    .projeto{
+        width: 400px;
+        margin: 20px 20px
     }
 }
