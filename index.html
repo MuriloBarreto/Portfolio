@@ -5,31 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Murilo Barreto - projetos em JavaScript, Web e GitHub.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="imagem/png" href="img/outline_article_black_24dp.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/outline_article_black_24dp.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfólio</title>
+    <title>Murilo Barreto | Portfólio</title>
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="perfil">
-            <a href="#">
-                <img src="" alt="Meu Perfil">
-            </a>
+        <div class="container cabecalho-conteudo">
+            <a href="#top" class="logo">MuriloB.</a>
+            <nav class="nav-principal">
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
     </header>
+
     <main>
-        <h1>Meus Projetos</h1>
-        <section class="projects">
+        <section class="hero" id="top">
+            <div class="container hero-conteudo">
+                <div class="hero-texto">
+                    <span class="badge">Fullstack & Problem Solver</span>
+                    <h1>Olá, eu sou o Murilo Barreto</h1>
+                    <p>Faço soluções completas para web com Node, React, Next.js, Java e JavaScript. Adoro desafios e uso cada projeto como uma oportunidade para aprender mais e entregar valor real.</p>
+                    <div class="hero-acoes">
+                        <a class="botao primario" href="#projetos">Ver projetos</a>
+                        <a class="botao secundario" href="https://github.com/MuriloBarreto" target="_blank" rel="noreferrer">Ver GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="perfil">
+                        <a href="https://github.com/MuriloBarreto" target="_blank" rel="noreferrer">
+                            <img src="" alt="Avatar de Murilo Barreto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="container section-header">
+                <span class="section-subtitle">Portfólio</span>
+                <h2>Meus projetos recentes</h2>
+                <p>Projetos hospedados no GitHub com demos ao vivo quando disponíveis.</p>
+            </div>
+            <div class="container projetos-grid"></div>
+            <div class="container paginacao">
+                <button id="btn-prev" type="button" disabled>Anterior</button>
+                <span id="pagina-atual">Página 1</span>
+                <button id="btn-next" type="button" disabled>Próxima</button>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="container about-grid">
+                <div>
+                    <span class="section-subtitle">Sobre mim</span>
+                    <h2>Desenvolvedor Fullstack focado em desafios</h2>
+                    <p>Gosto de aprender e resolver problemas. Busco sempre novos desafios para expandir meus conhecimentos e promover meu desenvolvimento intelectual e profissional. Trabalho com tecnologias como Node, React, Next.js, Java e JavaScript, entregando soluções completas e eficientes.</p>
+                </div>
+                <div class="cards-info">
+                    <article class="info-card">
+                        <div class="card-top">
+                            <span class="card-icon">⚙️</span>
+                            <strong>Fullstack</strong>
+                        </div>
+                        <p>Construo aplicações completas com Node, React, Next.js, Java e JavaScript, conectando front-end e back-end com qualidade.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-top">
+                            <span class="card-icon">🚀</span>
+                            <strong>Desafios</strong>
+                        </div>
+                        <p>Procuro sempre desafios que me motivem a encontrar soluções eficientes e evoluir tecnicamente a cada entrega.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-top">
+                            <span class="card-icon">💡</span>
+                            <strong>Inovação</strong>
+                        </div>
+                        <p>Aplicações pensadas para ser visualmente atraentes, funcionais e com foco em experiência do usuário.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="container contato-card">
+                <div>
+                    <span class="section-subtitle">Vamos conversar</span>
+                    <h2>Pronto para trocar ideias ou apresentar novos projetos?</h2>
+                    <p>Envie uma mensagem no GitHub ou explore meus repositórios para ver mais do meu trabalho.</p>
+                </div>
+                <a class="botao primario" href="https://github.com/MuriloBarreto" target="_blank" rel="noreferrer">Acessar GitHub</a>
+            </div>
         </section>
     </main>
+
     <footer class="rodape">
-        <a href="https://github.com/MuriloBarreto">
-            <p>Murilo Barreto</p>
-        </a>
+        <div class="container rodape-conteudo">
+            <p>© 2026 Murilo Barreto</p>
+            <a href="https://github.com/MuriloBarreto" target="_blank" rel="noreferrer">github.com/MuriloBarreto</a>
+        </div>
     </footer>
 
     <script src="js/portifolio.js"></script>
